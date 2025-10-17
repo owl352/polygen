@@ -17,7 +17,7 @@
     "test": "vitest run",
     "test:dev": "vitest dev",
     "publish-packages": "turbo run build && biome check . && changeset version && changeset publish",
-    "postinstall": "cp -R ./packages/polygen ../_polygen && cp -R ./packages/codegen ../ && cd .. && rm -rf polygen && yes | cp -rf ./_polygen ./polygen"
+    "postinstall": "yes | cp -rf ./packages/polygen ../_polygen && yes | cp -rf ./packages/codegen ../ && cd .. && rm -rf polygen && yes | cp -rf ./_polygen ./polygen"
   },
   "keywords": [
     "react-native",
