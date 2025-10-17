@@ -30,7 +30,7 @@
     "ora": "^8.1.0"
   },
   "devDependencies": {
-    "@callstack/polygen-typescript-config": "workspace:^",
+    "@callstack/polygen-typescript-config": "*",
     "typescript": "^5.7.2"
   }
 }

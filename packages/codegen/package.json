@@ -29,7 +29,7 @@
     "strip-indent": "^4.0.0"
   },
   "devDependencies": {
-    "@callstack/polygen-typescript-config": "workspace:^",
+    "@callstack/polygen-typescript-config": "*",
     "@types/node": "^22.10.0",
     "typescript": "^5.7.2"
   }
