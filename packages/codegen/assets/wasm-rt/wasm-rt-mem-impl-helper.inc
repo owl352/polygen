@@ -66,8 +66,9 @@
 void MEMORY_API_NAME(wasm_rt_allocate_memory)(MEMORY_TYPE* memory,
                                               uint64_t initial_pages,
                                               uint64_t max_pages,
-                                              bool is64) {
-  uint64_t byte_length = initial_pages * WASM_PAGE_SIZE;
+                                              bool is64,
+                                              uint64_t page_size) {
+  uint64_t byte_length = initial_pages * page_size;
   memory->size = byte_length;
   memory->pages = initial_pages;
   memory->max_pages = max_pages;

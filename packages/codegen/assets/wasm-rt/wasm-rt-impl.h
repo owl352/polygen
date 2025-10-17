@@ -590,7 +590,8 @@ const char* wasm_rt_strerror(wasm_rt_trap_t trap);
 void wasm_rt_allocate_memory(wasm_rt_memory_t*,
                              uint64_t initial_pages,
                              uint64_t max_pages,
-                             bool is64);
+                             bool is64,
+                             uint64_t page_size);
 
 /**
  * Grow a Memory object by `pages`, and return the previous page count. If
@@ -617,7 +618,8 @@ void wasm_rt_free_memory(wasm_rt_memory_t*);
 void wasm_rt_allocate_memory_shared(wasm_rt_shared_memory_t*,
                                     uint64_t initial_pages,
                                     uint64_t max_pages,
-                                    bool is64);
+                                    bool is64,
+                                    uint64_t page_size);
 
 /** Shared memory version of wasm_rt_grow_memory */
 uint64_t wasm_rt_grow_memory_shared(wasm_rt_shared_memory_t*, uint64_t pages);
